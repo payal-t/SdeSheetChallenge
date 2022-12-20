@@ -24,14 +24,27 @@ push(x): insert element is the array by increasing top by one.
 pop(): check whether top is not equal to -1 if it is so, return top and decrease its value by one.
 size(): return top+1.
 */
+
+/*Output:
+
+Top of the stack before deleting any element 7
+Size of the stack before deleting any element 3
+The element deleted is 7
+Size of the stack after deleting an element 2
+Top of the stack after deleting an element 3
+
+Time Complexity: O(N)
+
+Space Complexity: O(N)*/
+
 import java.util.*;
 class implStackArr{
 
 	int size=10000;
 	int arr[] =new int[size];
-	int top=-1;
+	int top= -1;
 
-	void push()
+	void push(int x)
 	{
 		top++;
 		arr[top]=x;
